@@ -8,105 +8,279 @@
 </head>
 <body>
 
-    <nav class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
         <div class="container">
             <h1 class="logo">Kore</h1>
             <ul class="nav-links">
                 <li><a href="#features">Características</a></li>
+                <li><a href="#screenshots">Capturas</a></li>
                 <li><a href="#pricing">Precios</a></li>
                 <li><a href="#" class="btn btn-outline" id="btn-login-nav">Iniciar Sesión</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-            <h2>El Punto de Venta Modular que Crece con tu Negocio</h2>
-            <p class="subtitle">Empieza gratis con lo esencial y añade funciones premium solo cuando las necesites. Sin contratos, sin complicaciones.</p>
-            <a href="#pricing" class="btn btn-primary btn-large">Comenzar Gratis</a>
+            <h1>El Punto de Venta Modular<br>que Crece con tu Negocio</h1>
+            <p class="subtitle">
+                Empieza gratis con las funciones esenciales y añade módulos premium solo cuando los necesites. 
+                Sin contratos largos, sin complicaciones. Tu negocio, tus reglas.
+            </p>
+            <div class="hero-buttons">
+                <a href="#pricing" class="btn btn-primary btn-large">🚀 Comenzar Gratis</a>
+                <a href="#screenshots" class="btn btn-outline btn-large">👀 Ver Demo</a>
+            </div>
         </div>
     </header>
 
+    <!-- Carousel Section -->
+    <section id="screenshots" class="carousel-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Conoce Kore en Acción</h2>
+                <p>Una interfaz intuitiva diseñada para que vendas más, más rápido</p>
+            </div>
+
+            <div class="carousel-container reveal">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=600&fit=crop" alt="Terminal de Venta">
+                        <div class="carousel-caption">
+                            <h3>🛒 Terminal de Venta Intuitiva</h3>
+                            <p>Cobra rápido con nuestra interfaz táctil optimizada para todo tipo de dispositivos</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=600&fit=crop" alt="Dashboard Analytics">
+                        <div class="carousel-caption">
+                            <h3>📊 Reportes en Tiempo Real</h3>
+                            <p>Conoce tu negocio con estadísticas detalladas y gráficas interactivas</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=900&h=600&fit=crop" alt="Gestión de Inventario">
+                        <div class="carousel-caption">
+                            <h3>📦 Control Total de Inventario</h3>
+                            <p>Gestiona productos, stock y categorías desde un solo lugar</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=600&fit=crop" alt="CRM">
+                        <div class="carousel-caption">
+                            <h3>👥 CRM y Fidelización</h3>
+                            <p>Construye relaciones duraderas con tus clientes y aumenta las ventas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prev-btn">‹</button>
+                    <button class="carousel-btn" id="next-btn">›</button>
+                </div>
+
+                <div class="carousel-indicators" id="carousel-indicators"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>5,000+</h3>
+                    <p>Negocios Activos</p>
+                </div>
+                <div class="stat-item">
+                    <h3>99.9%</h3>
+                    <p>Uptime Garantizado</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Soporte Disponible</p>
+                </div>
+                <div class="stat-item">
+                    <h3>$50M+</h3>
+                    <p>Procesados al Mes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Todo lo que necesitas, nada de lo que no</h2>
+            <div class="section-header reveal">
+                <h2>Todo lo que Necesitas, Nada de lo que No</h2>
+                <p>Funciones pensadas para hacer tu día a día más simple y rentable</p>
+            </div>
+
             <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon">📦</div>
-                    <h3>Kore Gratuito</h3>
-                    <p>Nuestro núcleo gratuito te da un CRUD de productos completo. Perfecto para empezar a organizar tu inventario desde el día uno.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">📦</div>
+                    <h3>Inventario Inteligente</h3>
+                    <p>Control total de tu stock con alertas automáticas, seguimiento en tiempo real y gestión multi-almacén. Nunca más te quedes sin productos clave.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">🔌</div>
-                    <h3>Plugins Premium</h3>
-                    <p>¿Necesitas más? Activa plugins de reportes, CRM, inventario avanzado y más. Paga solo por las funciones que tu negocio utiliza.</p>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">💳</div>
+                    <h3>Pagos Flexibles</h3>
+                    <p>Acepta efectivo, tarjetas, transferencias y wallets digitales. Integración directa con los principales procesadores de pago del mercado.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">☁️</div>
-                    <h3>Siempre en la Nube</h3>
-                    <p>Accede a tu información desde cualquier lugar. Tus datos estén seguros y disponibles 24/7.</p>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">📊</div>
+                    <h3>Analítica Avanzada</h3>
+                    <p>Convierte datos en decisiones. Reportes detallados de ventas, productos estrella, horarios pico y proyecciones de crecimiento.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">☁️</div>
+                    <h3>Cloud First</h3>
+                    <p>Accede desde cualquier lugar, en cualquier momento. Tus datos sincronizados y respaldados automáticamente en la nube.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🔌</div>
+                    <h3>Ecosistema de Plugins</h3>
+                    <p>Personaliza tu POS con módulos premium. CRM, contabilidad, delivery, y más. Paga solo por lo que usas.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Seguridad Empresarial</h3>
+                    <p>Encriptación de extremo a extremo, cumplimiento PCI-DSS y backups diarios. Tu información está protegida.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="container">
-            <h2 class="section-title">Un plan para cada etapa de tu negocio</h2>
+            <div class="section-header reveal">
+                <h2>Planes que Crecen Contigo</h2>
+                <p>Comienza gratis y escala cuando estés listo</p>
+            </div>
+
             <div class="pricing-grid">
-                <div class="pricing-card">
+                <div class="pricing-card reveal">
                     <h3>Kore Básico</h3>
                     <div class="price">Gratis</div>
-                    <p>Para siempre.</p>
+                    <p class="subtitle">Perfecto para empezar</p>
                     <ul>
-                        <li>✓ Gestión de Productos (CRUD)</li>
-                        <li>✓ Terminal de Venta (POS)</li>
-                        <li>✓ Soporte Comunitario</li>
+                        <li>✅ Terminal de Venta (POS)</li>
+                        <li>✅ Gestión de Productos (CRUD)</li>
+                        <li>✅ Historial de Ventas</li>
+                        <li>✅ Hasta 100 productos</li>
+                        <li>✅ 1 Usuario</li>
+                        <li>✅ Soporte por Email</li>
                     </ul>
-                    <a href="#" class="btn btn-outline">Empezar Ahora</a>
+                    <a href="#" class="btn btn-outline btn-large">Empezar Gratis</a>
                 </div>
-                
-                <div class="pricing-card highlighted">
+
+                <div class="pricing-card featured reveal">
                     <h3>Kore Premium</h3>
-                    <div class="price"><span>desde</span> $199 <span>/mes</span></div>
-                    <p>Arma tu plan ideal.</p>
+                    <div class="price">$199 <span>/mes</span></div>
+                    <p class="subtitle">Para negocios en crecimiento</p>
                     <ul>
-                        <li>✓ Todo lo del plan Básico</li>
-                        <li>✓ Reportes Financieros</li>
-                        <li>✓ Módulo de Clientes (CRM)</li>
-                        <li>✓ Inventario Avanzado</li>
-                        <li>✓ Soporte Prioritario</li>
+                        <li>✅ Todo lo del plan Básico</li>
+                        <li>✅ Productos Ilimitados</li>
+                        <li>✅ Múltiples Usuarios</li>
+                        <li>✅ Reportes Financieros Avanzados</li>
+                        <li>✅ CRM y Programa de Lealtad</li>
+                        <li>✅ Inventario Multi-almacén</li>
+                        <li>✅ Integraciones API</li>
+                        <li>✅ Soporte Prioritario 24/7</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Contratar Premium</a>
+                    <a href="#" class="btn btn-primary btn-large" id="btn-premium">Probar 14 días gratis</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>¿Listo para Transformar tu Negocio?</h2>
+            <p>Únete a miles de negocios que ya confían en Kore POS para gestionar sus ventas. Sin tarjeta de crédito requerida.</p>
+            <a href="#" class="btn btn-large" id="btn-cta">Crear Cuenta Gratis</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Kore POS. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Producto</h3>
+                    <ul>
+                        <li><a href="#features">Características</a></li>
+                        <li><a href="#pricing">Precios</a></li>
+                        <li><a href="#">Plugins</a></li>
+                        <li><a href="#">Integraciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Prensa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Estado del Servicio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Licencias</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kore POS. Todos los derechos reservados. Hecho con ❤️ en México.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Modal de Login -->
     <div class="modal-overlay" id="login-modal">
         <div class="modal-content">
             <button class="close-btn" id="close-modal-btn">&times;</button>
             <h2>Bienvenido de Nuevo</h2>
-            <p>Inicia sesión para acceder a tu dashboard.</p>
+            <p>Inicia sesión para acceder a tu dashboard</p>
             
             <form id="login-form">
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" placeholder="tu@email.com" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" required>
+                    <input type="password" id="password" placeholder="••••••••" required>
                 </div>
-                <button type="submit" class="btn btn-primary btn-full">Entrar</button>
+                <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                    🚀 Iniciar Sesión
+                </button>
             </form>
-            <p class="modal-footer">¿No tienes cuenta? <a href="#">Regístrate gratis</a></p>
+            <p class="modal-footer">
+                ¿No tienes cuenta? <a href="#pricing">Regístrate gratis</a>
+            </p>
         </div>
     </div>
 
