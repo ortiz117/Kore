@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kore POS Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css"> 
+     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
 
@@ -13,20 +13,26 @@
             <h3 id="store-name-sidebar">Kore POS</h3>
         </div>
         <ul class="nav-links">
-            <li><a href="#" id="nav-vender">🛒 Terminal (Vender)</a></li>
-            <li><a href="#" id="nav-products">📦 Productos</a></li>
-            <li><a href="#" id="nav-historial">🧾 Historial de Ventas</a></li>
-            <li><a href="#" id="nav-reports" class="plugin-locked">📊 Reportes (Plugin)</a></li>
-            <li><a href="#" id="nav-plugins">🔌 Plugins</a></li>
-            <li><a href="#" id="nav-configuracion">⚙️ Configuración</a></li>
+            <li><a href="#" id="nav-vender"><span>🛒 Terminal</span></a></li>
+            <li><a href="#" id="nav-products"><span>📦 Productos</span></a></li>
+            <li><a href="#" id="nav-historial"><span>🧾 Historial</span></a></li>
+            <li><a href="#" id="nav-reports" class="plugin-locked"><span>📊 Reportes 🔒</span></a></li>
+            <li><a href="#" id="nav-plugins"><span>🔌 Plugins</span></a></li>
+            <li><a href="#" id="nav-configuracion"><span>⚙️ Configuración</span></a></li>
         </ul>
         <div class="sidebar-footer">
-            <a href="index.html" class="logout-link">Cerrar Sesión</a>
+            <a href="#" class="logout-link" onclick="return confirm('¿Cerrar sesión?')">🚪 Salir</a>
         </div>
     </nav>
 
     <main class="content" id="main-content">
-        </main>
+        <!-- Contenido dinámico aquí -->
+    </main>
+
+    <!-- Toast de notificaciones -->
+    <div class="toast" id="toast">
+        <span id="toast-message"></span>
+    </div>
 
     <script src="dashboard.js"></script>
 </body>
