@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kore POS - El Punto de Venta que Crece Contigo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Kore</h1>
+            <ul class="nav-links">
+                <li><a href="#features">Características</a></li>
+                <li><a href="#pricing">Precios</a></li>
+                <li><a href="#" class="btn btn-outline" id="btn-login-nav">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h2>El Punto de Venta Modular que Crece con tu Negocio</h2>
+            <p class="subtitle">Empieza gratis con lo esencial y añade funciones premium solo cuando las necesites. Sin contratos, sin complicaciones.</p>
+            <a href="#pricing" class="btn btn-primary btn-large">Comenzar Gratis</a>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Todo lo que necesitas, nada de lo que no</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">📦</div>
+                    <h3>Kore Gratuito</h3>
+                    <p>Nuestro núcleo gratuito te da un CRUD de productos completo. Perfecto para empezar a organizar tu inventario desde el día uno.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔌</div>
+                    <h3>Plugins Premium</h3>
+                    <p>¿Necesitas más? Activa plugins de reportes, CRM, inventario avanzado y más. Paga solo por las funciones que tu negocio utiliza.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">☁️</div>
+                    <h3>Siempre en la Nube</h3>
+                    <p>Accede a tu información desde cualquier lugar. Tus datos estén seguros y disponibles 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Un plan para cada etapa de tu negocio</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Kore Básico</h3>
+                    <div class="price">Gratis</div>
+                    <p>Para siempre.</p>
+                    <ul>
+                        <li>✓ Gestión de Productos (CRUD)</li>
+                        <li>✓ Terminal de Venta (POS)</li>
+                        <li>✓ Soporte Comunitario</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Empezar Ahora</a>
+                </div>
+                
+                <div class="pricing-card highlighted">
+                    <h3>Kore Premium</h3>
+                    <div class="price"><span>desde</span> $199 <span>/mes</span></div>
+                    <p>Arma tu plan ideal.</p>
+                    <ul>
+                        <li>✓ Todo lo del plan Básico</li>
+                        <li>✓ Reportes Financieros</li>
+                        <li>✓ Módulo de Clientes (CRM)</li>
+                        <li>✓ Inventario Avanzado</li>
+                        <li>✓ Soporte Prioritario</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Contratar Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kore POS. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-modal-btn">&times;</button>
+            <h2>Bienvenido de Nuevo</h2>
+            <p>Inicia sesión para acceder a tu dashboard.</p>
+            
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Entrar</button>
+            </form>
+            <p class="modal-footer">¿No tienes cuenta? <a href="#">Regístrate gratis</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
